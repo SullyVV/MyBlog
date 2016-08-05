@@ -1,0 +1,11 @@
+<% include partials/header.ejs%>
+<h1>All the blogs in DB</h1>
+<% blogs.forEach(function(blog){ %>
+    <div>
+        <h2><%= blog.title%></h2>
+        <img src="<%= blog.img%>"></img>
+        <p><%= blog.contents%></p>
+        <p><%= blog.createdTime%></p>
+    </div>
+<% }); %>  
+<% include partials/footer.ejs%>
